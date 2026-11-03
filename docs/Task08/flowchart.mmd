@@ -1,0 +1,18 @@
+flowchart TD
+    A([START]) --> B[/Input month and milk readings/]
+    B --> C{Month and readings valid?}
+    C -- No --> D[/Show error and request correction/]
+    D --> B
+    C -- Yes --> E[Select regular or seasonal rate card]
+    E --> F[Calculate fat and SNF steps]
+    F --> G[Calculate rate per litre]
+    G --> H[Calculate and round entry payment]
+    H --> I{More ten-day entries?}
+    I -- Yes --> B
+    I -- No --> J[Add all litres and entry payments]
+    J --> K{Total litres greater than 500?}
+    K -- Yes --> L[Add Rs 0.50 per litre bonus]
+    K -- No --> M[Bonus = Rs 0]
+    L --> N[/Display ten-day total/]
+    M --> N
+    N --> O([END])
