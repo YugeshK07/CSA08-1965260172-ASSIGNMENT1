@@ -1,0 +1,6 @@
+Save your own screenshots here after running:
+1. python task02_decimal_demo.py
+2. python -m unittest -v
+3. python benchmark.py
+4. python main.py (show one regular and one seasonal example)
+Do not submit this placeholder as a screenshot. Capture genuine output from your own execution.

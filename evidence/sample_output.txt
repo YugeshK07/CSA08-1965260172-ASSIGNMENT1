@@ -1,0 +1,20 @@
+Sample calculations (regular rate card, January)
+Input: 10 L, fat 3.5%, SNF 8.5%
+Expected rate: Rs 30.00/litre
+Expected payment: Rs 300.00
+
+Input: 8.5 L, fat 4.2%, SNF 8.7%
+Fat steps = 7; SNF steps = 2
+Rate = 30.00 + (7 x 0.40) + (2 x 0.30) = Rs 33.40
+Payment = 8.5 x 33.40 = Rs 283.90
+
+Input: 12 L, fat 3.1%, SNF 8.3%
+Fat steps = -4; SNF steps = -2
+Rate = 30.00 - 1.60 - 0.60 = Rs 27.80
+Payment = 12 x 27.80 = Rs 333.60
+
+Task 12 example:
+April standard reading: Rs 32.00/litre
+January standard reading: Rs 30.00/litre
+501 L at regular standard rate: Rs 15,030.00 + Rs 250.50 bonus = Rs 15,280.50
+Exactly 500 L: no bonus.
